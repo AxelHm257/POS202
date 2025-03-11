@@ -1,10 +1,12 @@
 import javax.swing.*;
 
-public class Conductor  extends Empleado {
+public class Conductor extends Empleado {
 
     private String licencia;
-    public Conductor(String nombre, int id, double salario) {
+
+    public Conductor(String nombre, int id, double salario, String licencia) {
         super(nombre, id, salario);
+        this.licencia = licencia; // Inicialización correcta
     }
 
     public String getLicencia() {
@@ -16,6 +18,10 @@ public class Conductor  extends Empleado {
     }
 
     public void mostrarInfoLicencia() {
-        JOptionPane.showMessageDialog(null, "Licencia:" + licencia);
+        JOptionPane.showMessageDialog(null,
+                "Nombre: " + getNombre() +
+                        "\nID: " + getId() +
+                        "\nSalario: " + getSalario() +
+                        "\nLicencia: " + licencia);
     }
 }

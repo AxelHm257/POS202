@@ -13,7 +13,10 @@ public class Empleado {
     }
 
     public void mostrarInfoEmpleado() {
-        JOptionPane.showMessageDialog(null, "Datos del Empleado:,\n Nombre: " + nombre + "\nID: " + id + "\nSalario: " + salario);
+        JOptionPane.showMessageDialog(null,
+                "Datos del Empleado:\nNombre: " + nombre +
+                        "\nID: " + id +
+                        "\nSalario: " + salario);
     }
 
     public String getNombre() {
